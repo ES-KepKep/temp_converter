@@ -13,7 +13,7 @@ fn main() {
 
         match input {
             'C' => {
-                println!("{:_^30}", "_");
+                println!("{:_^30}", "");
                 println!("Selected Celsius");
                 let input: String = Input::new()
                     .with_prompt("Input temp")
@@ -24,11 +24,11 @@ fn main() {
                 let convertion = (input * 9.0 / 5.0) + 32.0;
 
                 println!("{input} Celsius to Farenheit is: {convertion:.2}");
-                println!("{:_^30}", "_");
+                println!("{:_^30}", "");
                 println!();
             }
             'F' => {
-                println!("{:_^30}", "_");
+                println!("{:_^30}", "");
                 println!("Selected Farenheit");
                 let input: String = Input::new()
                     .with_prompt("Input temp")
@@ -39,7 +39,7 @@ fn main() {
                 let convertion = (input - 32.0) * 5.0 / 9.0;
 
                 println!("{input} Farenheit to Celcius is: {convertion:.2}");
-                println!("{:_^30}", "_");
+                println!("{:_^30}", "");
                 println!();
             }
             'Q' => {
